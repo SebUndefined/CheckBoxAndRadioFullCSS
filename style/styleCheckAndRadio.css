@@ -1,0 +1,155 @@
+.form-horizontal .label-checkRadio {
+  padding-top: 0;
+ }
+ 
+ /* Customize the label (the radio-chk-container) */
+ .radio-chk-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* The switch - the box around the slider */
+.switch-container {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/* Hide the browser's default checkbox */
+.radio-chk-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+.switch-container input {
+  display:none;
+}
+
+/* Create a custom checkbox */
+.design-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+}
+/* Create a custom radio */
+.design-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-chk-container:hover input ~ .design-checkbox, 
+.radio-chk-container:hover input ~ .design-radio {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.radio-chk-container input:checked ~ .design-checkbox, 
+.radio-chk-container input:checked ~ .design-radio {
+  background-color: rgb(35, 198, 200);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.design-checkbox:after, 
+.design-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.radio-chk-container input:checked ~ .design-checkbox:after, 
+.radio-chk-container input:checked ~ .design-radio:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.radio-chk-container .design-checkbox:after {
+  left: 8px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+/* Style the checkmark radio/indicator */
+.radio-chk-container .design-radio:after {
+  left: 8px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* The slider */
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .switch-slider {
+  background-color: rgb(35, 198, 200);
+}
+
+input:focus + .switch-slider {
+  box-shadow: 0 0 1px rgb(35, 198, 200);
+}
+
+input:checked + .switch-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.switch-slider.round {
+  border-radius: 34px;
+}
+
+.switch-slider.round:before {
+  border-radius: 50%;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CheckBox et radios</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/styleCheckAndRadio.css">
+</head>
+
+<body>
+        <div class="container">
+                <!-- Normal Bootstrap container -->
+                <div class="row">
+                        <!-- Normal Bootstrap row -->
+                        <div class="jumbotron">
+                                <h1>Radio et CheckBox</h1>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <!-- Col 1 for checkboxes -->
+                                <h1>CheckBox</h1>
+                                <form class="form-horizontal">
+                                        <!-- Start form for checkboxes -->
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="checkbox1">One:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="checkbox" id="checkbox1" class="chkchange" name="checkbox" value="One">
+                                                                <span class="design-checkbox"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="checkbox2">Two:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="checkbox" id="checkbox2" class="chkchange" name="checkbox" value="Two">
+                                                                <span class="design-checkbox"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="checkbox3">Tree:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="checkbox" id="checkbox3" class="chkchange" name="checkbox" value="Tree">
+                                                                <span class="design-checkbox"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="checkbox4">Four:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="checkbox" id="checkbox4" class="chkchange" name="checkbox" value="Four">
+                                                                <span class="design-checkbox"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                </form>
+                                <!-- End form for checkboxes -->
+                        </div>
+                        <!-- End Col 1 for checkboxes -->
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <!-- Col 2 for radio -->
+                                <h1>Radio</h1>
+                                <form class="form-horizontal">
+                                        <!-- Start form for radio -->
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="radio1">One:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="radio" id="radio1" checked="checked" name="radio" value="1">
+                                                                <span class="design-radio"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="radio2">Two:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="radio" id="radio2" name="radio" value="2">
+                                                                <span class="design-radio"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="radio3">Tree:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="radio" id="radio3" name="radio" value="3">
+                                                                <span class="design-radio"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-2 label-checkRadio" for="radio4">Four:</label>
+                                                <div class="col-sm-10">
+                                                        <label class="radio-chk-container">
+                                                                <input type="radio" id="radio4" name="radio" value="4">
+                                                                <span class="design-radio"></span>
+                                                        </label>
+                                                </div>
+                                        </div>
+                                </form>
+                                <!-- End form for radio -->
+                        </div>
+                        <!-- End Col 2 for radio -->
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <h1>Switch</h1>
+                                <form class="form-horizontal">
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-6 label-checkRadio" for="checkboxswitchone">Switch One ? </label>
+                                                <div class="col-sm-6">
+                                                        No  
+                                                        <label class="switch-container">
+                                                                <input type="checkbox" id="checkboxswitchone" name="checkboxswitchone" checked="checked" />
+                                                                <span class="switch-slider"></span>
+                                                        </label> 
+                                                        Yes
+                                                </div>
+                                                
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="control-label col-sm-6 label-checkRadio" for="test">Switch Two ?</label>
+                                                <div class="col-sm-6">
+                                                        No 
+                                                        <label class="switch-container">
+                                                                <input type="checkbox" id="checkboxswitchtwo" name="checkboxswitchtwo" />
+                                                                <span class="switch-slider round"></span>
+                                                        </label> 
+                                                        Yes
+                                                </div>         
+                                        </div>
+                                </form>
+                                
+                        </div>
+                </div>
+                <!-- End Normal Bootstrap row -->
+                <div class="row">
+                        <h1>Résultat JavaScript</h1>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="resultjs">
+                                        <h4>Résultat CheckBox</h4>
+                                        <ul id="checkboxsummary">
+
+                                        </ul>
+                                        
+                                </div>   
+                        </div>
+                        
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <h4>Résultat Radio</h4>
+                                        <ul id="radiosummary">
+                                                
+                                        </ul>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <h4>Résultat Switch</h4>
+                                        <div id="switchsummary">
+                                                
+                                        </div>
+                                        <div id="switchsummarytwo">
+                                                
+                                        </div>
+                        </div>
+                        
+                </div>
+
+        </div>
+        <!-- End Normal Bootstrap container -->
+
+</body>
+<footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script src="./script/example.js"></script>
+</footer>
+
+</html>
